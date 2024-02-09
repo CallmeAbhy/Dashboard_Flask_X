@@ -17,7 +17,7 @@ export default function Home() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("https://2176-2402-e280-3e15-631-c1d4-2035-5ca0-1998.ngrok-free.app/api/data");
+      const response = await axios.get("http://imabhy.pythonanywhere.com");
       setData(response.data);
       console.log("The data Comming From Python is ", response.data);
     } catch (error) {
