@@ -22,7 +22,7 @@ const Data_List = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://imabhy.pythonanywhere.com");
+      const response = await axios.get("//imabhy.pythonanywhere.com");
       setData(response.data);
       console.log("The data Comming From Python is ", response.data);
     } catch (error) {
